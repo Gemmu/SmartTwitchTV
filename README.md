@@ -131,6 +131,10 @@ Follow the below instruction to translate, test and send the files back.
 
 This file is part of the web app. The easiest wat to test that file is to:<br>
 
+- In [app/specific/Settings.js](app/specific/Settings.js):
+    - Add the new language in `app_lang` section for `values` and `apply_values`. The order is important.
+    - In the same `Settings.js` add the new language in function `Settings_SetAppLang()`
+- In [app/index.html](app/index.html) at the end add a new script tag pointing to the new language file.
 -   Open [app/index.html](https://github.com/fgl27/SmartTwitchTV/blob/master/app/index.html) locally in a web browser (recommended Chrome), that will load the web app
 -   To navigate use the keyboard arrow keys, enter and esc
 -   Make sure you go to all app screens included in the player (open Live, VOD and clips) and check if the translated strings do not overflow or cause the app to look odd
