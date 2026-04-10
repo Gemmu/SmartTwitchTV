@@ -122,10 +122,11 @@ var Settings_value = {
             'Français - French [FR]',
             'Português - Portuguese [PT-BR]',
             'Русский - Russian [RU]',
+            'Suomi - Finnish [FI]',
             'Türkçe - Turkish [TR]',
             'Українська - Ukrainian [UK-UA]'
         ],
-        apply_values: ['en_US', 'es_Us', 'fr_FR', 'pt_BR', 'ru_RU', 'tr_TR', 'uk_UA'],
+        apply_values: ['en_US', 'es_Us', 'fr_FR', 'pt_BR', 'ru_RU', 'fi_FI', 'tr_TR', 'uk_UA'],
         defaultValue: 1
     },
     loadAll_lang: {
@@ -1222,6 +1223,7 @@ function Settings_SetAppLang() {
     else if (Main_A_includes_B(app_lang, 'fr_')) fr_FRLang();
     else if (Main_A_includes_B(app_lang, 'uk_')) uk_UALang();
     else if (Main_A_includes_B(app_lang, 'tr_')) tr_TRLang();
+    else if (Main_A_includes_B(app_lang, 'fi_')) fi_FILang();
 
     OSInterface_SetLanguage(app_lang);
 
